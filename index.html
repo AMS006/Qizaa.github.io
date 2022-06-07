@@ -640,7 +640,7 @@
                     <h1 class="text-center">Sustainable Brands</h1>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5 mr-5 mb-5 border center shadow ">
+                    <div class="col-lg-3 col-md-5 rounded-1 px-lg-4 pt-lg-5 mr-md-5 mb-5 border center shadow ">
                         <figure class="figure ">
                             <img src="images/Bronwn Living.jpg"
                                 class="figure-img img-fluid img-responsive center-block d-block mx-auto" alt="">
@@ -731,9 +731,9 @@
             </div>
         </div>
         <div class="container d-md-block d-none my-5">
-            <div id="myCarousel" class="carousel slide" data-interval="100000" data-ride="carousel">
-                <div class="inner-carousel">
-                    <div class="carousel-item active">
+            <h2 class="text-center mb-4">Comming Soon</h2>
+                <div class="owl-carousel owl-comming-soon">
+                    <div class="item">
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-2">
                                 <img src="images/cs-1.jpg" class="d-block w-100" alt="">
@@ -769,7 +769,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="item">
                         <div class="row">
                             <div class="col-md-4">
                                 <img src="images/cs-11.jpg" class="d-block w-100 " id="slider-img" height="376px"
@@ -781,13 +781,6 @@
                         </div>
                     </div>
                 </div>
-                <a class=" carousel-control-prev" href="#myCarousel" data-slide="prev">
-                    <span class="carousel-item-control-prev"></span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                    <span class="carousel-control-icon-next"></span>
-                </a>
-            </div>
         </div>
     </section>
     <footer class="mt-5" style="font-size:0.8rem;">
@@ -850,7 +843,7 @@
                 <div class="col-md-1 col-2 ml-2 ">
                     <img src="images/upi.webp" class="img-fluid d-block w-100" alt="">
                 </div>
-                <div class="col-md-1 offset-lg-0 offset-2 col-2 ml-2">
+                <div class="col-md-1 offset-lg-0 offset-2 col-2 ml-2 mt-md-0 mt-3">
                     <img src="images/visa.webp" class="img-fluid d-block w-100" alt="">
                 </div>
                 <div class="col-md-1 col-2 ml-2 mt-md-0 mt-3">
@@ -890,6 +883,12 @@
             $('.os-slider').owlCarousel({
                 items:1,
                 dots:true
+            })
+        })
+        $(document).ready(function(){
+            $(".owl-comming-soon").owlCarousel({
+                items:1,
+                nav:true
             })
         })
     </script>
