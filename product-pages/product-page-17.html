@@ -65,7 +65,7 @@
         <div class="row d-lg-flex d-none">
             <div class="col-lg-8 " style="margin-left:150px;">
                 <a href="../index.html" class="active">Home</a>
-                <span style="color: gray;">/Biodegradable Jute Grow Bags 8x 12 & 6x6 inches</span>
+                <span style="color: gray;">/Bamboo Cutlery Set</span>
             </div>
             <div class="col-lg-2">
                 <a href="product-page-16.html" class="active">
@@ -102,25 +102,35 @@
                         alt=""style="border:1px solid gray">
                     </div>
                 </div>
-                    <figcaption class="figure-caption lead  mt-5 text-left d-lg-block d-none"
-                        style="color: black; font-size:1rem !important">Biodegradable jute Grow bags of size 8x12 inches
-                        are <br> one best sustainable use grow bags which are made to <br> reduce the burden of plastic
-                        waste produced. </figcaption>
-                <!-- </figure> -->
             </div>
             <div class="col-lg-4 col-md-7 col-10 mt-lg-5 mt-1">
-                <h2>Biodegradable Jute Grow Bags 8x 12 & 6x6 inches</h1>
-                    <p class="display-5 mt-3">₹55.00</p>
-                    <label for="select">Size</label> <br>
-                    <select name="" id="select" class="custom-select w-100">
-                        <option value="">8x6</option>
-                        <option value="">6x6</option>
-                    </select>
+                <h2>Bamboo Cutlery Set</h1>
+                    <p class="display-5 mt-3">₹385.00</p>
                     <br><label for="quantity">Quantity</label><br>
                     <input type="number" value="1" name="" id="quantity"
                         style="padding:5px; width:30%; border:1px solid gray; color:gray;">
                     <br> <button class="my-3 p-2 add-to-cart" style="">Add to cart</button> <br>
                     <button class="my-3 p-2 buy-now">Buy Now</button>
+                    <figcaption class="figure-caption lead  mt-5 text-left"
+                    style="color: black; font-size:1rem !important">
+                    <div class="head d-flex justify-content-between">
+                        <h4 class="py-3">Product Info</h2>
+                         <button class="d-lg-none d-block">-</button>   
+                    </div>
+                    <div class="pinfo-content">
+                        <p>Yimby’s Bamboo Cutlery Kit is a perfectly portable companion for the on- the- go Zero Waster. The set consists of Spoon, Fork, Knife, Straw, Straw cleaner Made of All Natural Bamboo and is completely biodegradable.The ergonomic design ensures that your refusal to use plastic is effortless.</p>
+                       <p>Product details - </p>
+                       <ul>
+                        <li>Natural Materials</li>
+                        <li>Sustainable</li>
+                        <li> Plastic free</li>
+                        <li>Reusable</li>
+                        <li> Ergonomic Design</li>
+                        <li>Complete cutlery kit</li>
+                        <li>Jute pouch for convenient storage</li>
+                       </ul>
+                </div>
+                </figcaption>
             </div>
         </div>
         <div class="container mt-5 ">
@@ -323,50 +333,7 @@
     <script src="https://kit.fontawesome.com/3401d03427.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="../owl.carousel.min.js"></script>
-    <script>
-        const rp = document.querySelectorAll(".owl-one .item img");
-        function show(i){
-            if (i != 0)
-                rp[i].src = `../images/osh-${i + 1}.webp`
-        }
-        function hide(i){
-            if(i !=0)
-              rp[i].src = `../images/os-${i+1}.jpg`
-        }
-        $(document).ready(function(){
-            $('.owl-two').owlCarousel({
-                items:1,
-                loop:false,
-                // dots:true,
-                margin:10
-            })
-        })
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                items: 3,
-                margin: 5,
-                loop: true,
-                nav: true,
-                
-                responsive: {
-                    0:{
-                        items:1,
-                        nav:false,
-                        autoplay:true,
-                        loop:true
-                    },
-                    766: {
-                        items: 2,
-                        nav: true,
-                    },
-                    991: {
-                        items: 3,
-                    }
-                }
-
-            })
-        })
-    </script>
+   <script src="ProductPage.js"></script>
 </body>
 
 </html>

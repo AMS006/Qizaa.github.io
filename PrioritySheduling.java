@@ -35,9 +35,6 @@ public class PrioritySheduling {
             list.add(new pair(Prio[i],i+1,AT[i],BT[i]));
         }
         Collections.sort(list);
-        // for(int i = 0;i<n;i++)
-        // System.out.println(list.get(i).PrNo+ " " +list.get(i).pId+" " +list.get(i).at+" " +list.get(i).bt );
-        int avgWT,avgRT,avgTAT;
         int CT[] = new int[n];
         int RT[] = new int[n];
         int TAT[] = new int[n];
@@ -48,10 +45,19 @@ public class PrioritySheduling {
             CT[i] = sum;
             TAT[i] = CT[i] - list.get(i).at;
             WT[i] = TAT[i] - list.get(i).bt;
-            RT[i] = sum-list.get(i).bt;  
+            RT[i] = sum-list.get(i).bt-list.get(i).at;  
         }
+        System.out.println("ProcessId AT BT CT TAT WT RT");
         for(int i = 0;i<n;i++){
-            System.out.println(CT[i] + " " + TAT[i] + " " + WT[i]+ " " + RT[i]);
+            System.out.println(list.get(i).pId+" "+list.get(i).at+" " +list.get(i).bt+" "+ CT[i] + " " + TAT[i] + " " + WT[i]+ " " + RT[i]);
         }
+        int avgWT = 0, avgTAT=0,ThroughPut =0;
+        for(int i = 0;i<n;i++){
+            avgWT += WT[i];
+            avgTAT += TAT[i];
+        }
+        avgTAT = avgTAT/n;
+        avgWT = avgWT/n;
+        ThroughPut = n/CT[n-1];
     }
 }

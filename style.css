@@ -232,7 +232,7 @@ background-color: rgb(223, 236, 236);
 }
 .abs{
     position: absolute;
-    bottom:90px;
+    bottom:88px;
     left: 15px;
     display: flex;
     justify-content: center;
@@ -246,7 +246,7 @@ background-color: rgb(223, 236, 236);
     transition: 0.3s all ease;
 }
 .abs.show{
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
 }
 .abs a{
@@ -277,4 +277,11 @@ background-color: rgb(223, 236, 236);
     right: 100px !important;
     color: #afb2bd !important;
     outline: none !important;
+}
+.center-1 img{
+    height: 332 px !important;
+}
+.owl-comming-soon img:hover{
+    filter: brightness(0.7);
+    cursor: pointer;
 }
